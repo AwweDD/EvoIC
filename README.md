@@ -18,15 +18,6 @@ EvoIC/
 ├── evalMetric.py
 ├── README.md
 ├── figure2.png
-└── data/
-    ├── 0_image_embedding/
-    │   └── ViT-B-32/
-    ├── 1_text_embedding/
-    │   └── WordNetNouns.csv
-    ├── 2_M_prompts/
-    │   └── initialPrompts/DeepSeek-V3.2/
-    ├── 3_related_nouns_for_each_center/
-    └── 4_datasets/
 ```
 
 | Script | Purpose |
