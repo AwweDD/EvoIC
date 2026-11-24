@@ -41,7 +41,7 @@ def generate_M_prompt_for_each_cluster(prompt_nouns, n_prompts, M):
             }
         ]
         response = Generation.call(
-            api_key=os.getenv("sk-d15c92dbd5794afd8ddff005e2145c66"),
+            api_key=os.getenv(""),
             model="deepseek-v4-flash",
             messages=messages,
             result_format="message",
@@ -139,7 +139,7 @@ if __name__ == "__main__":
 #
 #
 # # Qwen
-# # API_KEY = "sk-d15c92dbd5794afd8ddff005e2145c66"
+# # API_KEY = ""
 # # API_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
 # # #
 # # headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
@@ -168,7 +168,7 @@ if __name__ == "__main__":
 #     messages[0]["content"].append({"type": "text", "text": meta_prompt})
 #
 #     response = Generation.call(
-#         api_key=os.getenv("sk-d15c92dbd5794afd8ddff005e2145c66"),
+#         api_key=os.getenv(""),
 #         model=model_name,
 #         messages=messages,
 #         result_format="message",
