@@ -16,7 +16,7 @@ templates = [
     lambda c: f"a photo of the small {c} ",
 ]
 
-api_key = "sk-0774a818823049ad9a655550d68db7bb"
+api_key = ""
 client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
 
 
