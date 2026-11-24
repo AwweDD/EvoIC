@@ -17,7 +17,6 @@ EvoIC/
 ├── PromptOptimization.py
 ├── evalMetric.py
 ├── README.md
-├── figure2.png
 ```
 
 | Script | Purpose |
