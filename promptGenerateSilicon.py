@@ -18,7 +18,7 @@ templates = [
     lambda c: f"a photo of the small {c} ",
 ]
 
-client = OpenAI(api_key="sk-pdonuqtagmznykefngrrabbuyszhnhjhiomzhsrnlotkarmg", base_url="https://api.siliconflow.cn/v1")
+client = OpenAI(api_key="", base_url="")
 
 
 def generate_M_prompt_for_each_cluster(prompt_nouns, n_prompts, M):
