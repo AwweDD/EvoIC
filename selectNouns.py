@@ -17,17 +17,6 @@ def kmeans(X, cluster_num):
     print("K-means clustering done.")
     return I
 
-
-"""
-    ["CIFAR-10", "CIFAR-20", "STL-10", "ImageNet-10", "ImageNet-Dogs", "DTD", "UCF101", "ImageNet"]
-    [167, 167, 17, 43, 65, 141, 303, 4271]
-"""
-"""
-    ours: 
-    ["CIFAR-10", "CIFAR-20", "STL-10", "DTD", "ImageNet-10", "ImageNet-Dogs"]
-    [100, 200, 100, 100, 100, 100]
-    [3, 3, 3, 3, 3, 3]
-"""
 if __name__ == "__main__":
     model_name = "ViT-B-32"
     #
