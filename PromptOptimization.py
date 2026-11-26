@@ -263,6 +263,16 @@ class mutation:
             ind[idx] = np.random.choice(valid_vals)
         return ind
 
+    def uniform_perturb_mutation(self, individual, mut_prob, perturb_range=1):
+        ind = individual.copy()
+        mut_mask = np.random.rand(len(ind)) < mut_prob
+        perturbations = np.random.randint(
+            -perturb_range, perturb_range + 1, len(ind)
+        )
+        ind[mut_mask] += perturbations[mut_mask]
+        ind = np.clip(ind, -1, M - 1)
+        return ind
+
     def targeted_swap_mutation(self, individual, mut_prob):
         ind = individual.copy()
         if np.random.rand() < mut_prob:
@@ -451,7 +461,7 @@ class evolutionary:
         #
         offspring = []
         for i in range(self.N):
-            c = MT.random_replace_mutation(parents[i], 0.001)
+            c = MT.uniform_perturb_mutation(parents[i], 0.001)
             offspring.append(c)
         return np.array(offspring)
 
